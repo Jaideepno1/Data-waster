@@ -1,0 +1,152 @@
+body {
+  --mdc-theme-primary: #3f51b5;
+  --mdc-theme-secondary: #f44336;
+  --mdc-theme-on-primary: #ffffff;
+  --mdc-theme-on-secondary: #ffffff;
+  background-color: #fafafa;
+}
+body .ribbon {
+  top: 0;
+  z-index: -1;
+  background-color: #3f51b5;
+  width: 100%;
+  height: 10rem;
+  position: absolute;
+}
+body .main-content {
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin: 1.5rem;
+  padding: 2rem;
+  min-height: calc(100vh - 7rem);
+}
+body .main-content .theme-toggle {
+  position: absolute;
+  top: 0.5rem;
+  right: 3rem;
+}
+body .main-content a {
+  color: #3f51b5;
+}
+body .main-content ::-moz-selection {
+  background-color: #3f51b5;
+  color: white;
+}
+body .main-content ::selection {
+  background-color: #3f51b5;
+  color: white;
+}
+body .main-content #carbonads {
+  margin-bottom: 1rem;
+  float: right;
+  border-radius: 6px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  font-family: Roboto, Helvetica, sans-serif;
+  line-height: 28px;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media only screen and (max-width: 425px) {
+  body .main-content #carbonads {
+    width: 100%;
+  }
+}
+body .main-content #carbonads:hover {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+body .main-content #carbonads .carbon-wrap .carbon-img > img {
+  margin-right: 9px;
+  float: left;
+}
+@media only screen and (max-width: 400px) {
+  body .main-content #carbonads .carbon-wrap .carbon-img > img {
+    width: auto;
+    max-width: 130px;
+    height: 50px;
+  }
+}
+body .main-content #carbonads .carbon-wrap .carbon-text {
+  color: #637381;
+  font-weight: 300;
+  display: block;
+  font-size: 12px;
+  line-height: 15.96px;
+  margin-bottom: 0;
+  margin-top: 8px;
+  text-decoration: none;
+}
+body .main-content #carbonads .carbon-poweredby {
+  color: #c5cdd0;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+body .main-content .option--mbs {
+  width: 100%;
+  margin-top: 32px;
+}
+body .main-content .mdc-switch__label {
+  margin-left: 10px;
+}
+body .main-content .option--threads__title {
+  margin-bottom: 0;
+}
+body .output--progress {
+  bottom: 0px;
+  height: 8px;
+  position: fixed;
+}
+body.setting--dark {
+  background-color: #212121 !important;
+  --mdc-theme-text-primary-on-background: white;
+  --mdc-theme-text-secondary-on-background: white;
+  --mdc-theme-text-icon-on-background: white;
+}
+body.setting--dark .main-content {
+  color: white;
+  background-color: #303030;
+}
+body.setting--dark .main-content .mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input,
+body.setting--dark .main-content .mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: white;
+}
+body.setting--dark .main-content .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+body.setting--dark .main-content .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
+body.setting--dark .main-content .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+  border-color: white;
+}
+body.setting--dark .main-content #carbonads .carbon-text {
+  color: white !important;
+}
+body.setting--dark .main-content a {
+  color: #5c6bc0;
+}
+body.setting--dark .main-content ::-moz-selection {
+  background-color: #c5cae9;
+  color: black;
+}
+body.setting--dark .main-content ::selection {
+  background-color: #c5cae9;
+  color: black;
+}
+body.setting--dark .mdc-linear-progress__buffer {
+  background-color: #404040;
+}
+body.setting--animate-colours {
+  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+body.setting--animate-colours ::-moz-selection {
+  -moz-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition-property: background-color, color;
+  transition-property: background-color, color;
+}
+body.setting--animate-colours .main-content,
+body.setting--animate-colours a,
+body.setting--animate-colours ::selection {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, color;
+}
